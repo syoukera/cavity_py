@@ -12,13 +12,14 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='sample',
+    name='cavity_py',
     version='0.1.0',
-    description='Sample package for Python-Guide.org',
+    description='Python module for Solving Navier-Stokes equation in cavity geometry',
     long_description=readme,
-    author='Kenneth Reitz',
-    author_email='me@kennethreitz.com',
-    url='https://github.com/kennethreitz/samplemod',
+    author='Akira Shioyoke',
+    author_email='s.akira2986@gmail.com',
+    install_requires=['numpy', 'matplotlib'],
+    url='https://github.com/syoukera/cavity_py',
     license=license,
     packages=find_packages(exclude=('tests', 'docs'))
 )
