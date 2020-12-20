@@ -11,9 +11,7 @@ def main():
 
     for niter in range(maxit):
 
-        var.calcu()
-        var.calcv()
-        var.calcp()
+        var.iter_step()
 
         resorm = var.resorm/var.flowin
         resoru = var.resoru/var.xmonin

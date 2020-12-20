@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 
 class cavity():
     '''Class for strage global variables'''
@@ -292,3 +291,10 @@ class cavity():
             for j in range(1, self.njm1):
                 self.P[i, j] = self.P[i, j] + self.urfp*(self.PP[i, j] - ppref)
     #             self.PP[i, j] = 0.0
+
+    def iter_step(self):
+        '''Proceed calculation step'''
+
+        self.calcu()
+        self.calcv()
+        self.calcp()
